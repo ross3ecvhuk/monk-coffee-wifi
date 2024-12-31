@@ -25,7 +25,4 @@ jobs:
               git checkout main &&
               git fetch --all &&
               git reset --hard origin/main &&
-              git pull origin main &&
-              cd .. &&
-              sudo cp -R monk-coffee-wifi /var/www/html
-              '
+              git pull origin main'
