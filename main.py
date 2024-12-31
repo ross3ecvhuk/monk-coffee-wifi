@@ -60,12 +60,16 @@ def add_cafe():
     else:
         return render_template('add.html', form=form)
 
-
 @app.route('/cafes')
 def cafes():
     list_of_rows = get_cafes()
     return render_template('cafes.html', cafes=list_of_rows)
 
+@app.route('/aws')
+def hifromcloud():
+    return render_template('hi-from-aws.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True, )
+
